@@ -1,8 +1,3 @@
----
-layout: default
-title: Titel van je pagina
----
-
 # PelleTopper.github.io
 
 verwijzen naar het eerste hoofdstuk
