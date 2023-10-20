@@ -7472,6 +7472,109 @@ a.anchor-link {
     display: inline-block;
     white-space: normal;
   }
+    * {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: rgba(30, 144, 255, 0.65);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #4682B4;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
       li {
     font-size: 20px; /* You can adjust this value to change the font size */
   }
@@ -7479,6 +7582,19 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
+<div class="header">
+  <h1>Amsterdam city swim</h1>
+  <p> The open water swimming event through the
+canals of Amsterdam.</p>
+</div>
+
+<div class="navbar">
+  <a href="assignment1.html">Paralympics</a>
+  <a href="test3.html">Tour boats</a>
+  <a href="WS4test.html">Housing</a>
+  <a href="WS4test.html">Transport</a>
+  <a href="index.html" class="right">Home</a>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7496,7 +7612,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4>Tourist tax</h4>
+<h3>Tourist tax</h3>
 </div>
 </div>
 </div>
@@ -7610,7 +7726,7 @@ Tourist tax for short-stay accomodation is 10% in Amsterdam (source: <a href="ht
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>AirBnB</p>
+<h3>AirBnB</h3>
 </div>
 </div>
 </div>
@@ -7621,7 +7737,6 @@ Tourist tax for short-stay accomodation is 10% in Amsterdam (source: <a href="ht
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Per neighbourhood</p>
 </div>
 </div>
 </div>
@@ -7778,7 +7893,6 @@ Name: id, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Per street</p>
 </div>
 </div>
 </div>
@@ -7946,7 +8060,6 @@ Name: count, Length: 2223, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>BBGA</p>
 </div>
 </div>
 </div>
@@ -8029,7 +8142,7 @@ However, from the listings document we can see the availability of the AirBnBs.<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Hotel rooms</p>
+<h3>Hotel rooms</h3>
 </div>
 </div>
 </div>
@@ -8117,7 +8230,7 @@ The number of hotel rooms needed in Amsterdam is -11695
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Licenses AirBnB</p>
+<h3>Licenses AirBnB</h3>
 </div>
 </div>
 </div>
@@ -8164,5 +8277,8 @@ The number of hotel rooms needed in Amsterdam is -11695
 </div>
 </div>
 </main>
+    <div class="footer">
+  <a href="index.html" class="right">To home page</a>
+</div>
 </body>
 </html>
